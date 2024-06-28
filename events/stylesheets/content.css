@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    background-color: #FFD79B;
+    cursor: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/helvetica_regular.otf") format("truetype");
+    font-style: Light;
+    font-weight: Light;
+  }
+
+p, a {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+  .cursorDot {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transform: translate( -50%, -50%);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.cursorDot {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transform: translate( -50%, -50%);
+    pointer-events: none;
+}
+
+
+header {
+    width: 100%;
+    background-color: white;
+}
+
+.headBack {
+    width: 95%;
+    margin: auto;
+    padding-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navTip {
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: #808080;
+    transition: all 0.3s;
+}
+
+
+.navTip:hover {
+    color: rgba(255, 208, 137, 1);
+}
+
+
+a, button {
+    cursor: none;
+}
+
+.logo {
+    width: 6vw;
+    height: 2.55vw;
+    background-image: url("../img/logo.svg");
+    background-size: 100%;
+    position: relative;
+    z-index: 7;
+}
+
+.calendarSMTH {
+    margin: 2vw 0 2vw -2.5vw;
+    width: 10vw;
+    z-index: 6;
+
+}
+
+.calendar {
+    display: grid;
+    width: 41vw;
+    height: 41vw;
+    margin: 3vw auto 1vw auto; 
+    border-radius: 3vw;
+    background-color: white;
+    padding: 1vw;
+
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 12% 12% 12% 12% 12% 12% 12% 12%;
+    gap: 0.5% 4%;
+}
+
+.calendarTip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.calendarNum {
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 2.3vw;
+    color: #808080;
+    padding: 0 4vw;
+}
+
+.calendarImg {
+    position: absolute;
+    opacity: 0;
+    width: 4.5vw;
+    transition: width 300;
+}
+
+.calendarImg:hover {
+    width: 5vw;
+}
+
+#calenarCont {
+    width: 41vw;
+    height: 41vw;
+}
+
+#img1 {
+    top: -0.5vw;
+}
+
+.ev {
+    color: #FFD089;
+}
+
+.aboutEvent {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 90000;
+}
+
+.eventName {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: #808080;
+    text-align: center;
+    margin-bottom: 2.7vw;
+}
+
+.back {
+    width: 8vw;
+    position: fixed;
+    top: 2vw;
+    left: 3vw;
+}
+
+.eventButton {
+    width: 100%;
+    color: white;
+    background-color: #C0C0C0;
+    border-radius: 0.3vw;
+    text-transform: uppercase;
+    padding: 1vw 0;
+
+    font-family: Arial;
+    font-size: 1.8vw;
+    transition: color 0.3s , background-color 0.3s;
+    text-align: center;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    margin-right: 10vw;
+}
+
+.eventPoster {
+    width: 28vw;
+    height: 42vw;
+    background-size: 100%;
+}
+
+.eventButton:hover {
+    background-color: #FFD089;
+    color:white;
+}
+
+.error {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 90000;
+}
+
+.errorImg {
+    width: 40vw;
+    margin-bottom: 2vw;
+}
+
+.errorText {
+    color: #A0A0A0;
+    font-family: "Cherry Bomb One", system-ui;
+    transition: color 0.3s;
+}
+
+.errorText:hover {
+    color: #FFD089;
+}
+
+footer {
+    background-color: #FFD79B;
+    height: 1vw;
+    width: 100%;
+}
+
+
+::selection {
+    background: rgba(255, 208, 137, 1); 
+}
+
+    
+::-moz-selection {
+    background: rgba(255, 208, 137, 1); 
+}

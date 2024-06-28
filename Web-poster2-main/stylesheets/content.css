@@ -1,0 +1,1003 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    background-color: black;
+    cursor: none;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica_regular.otf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.cursorDot {
+  position:fixed;
+  top: 0;
+  left: 0;
+  transform: translate( -50%, -50%);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.cursorDot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate( -50%, -50%);
+  pointer-events: none;
+}
+
+.navTip:hover {
+transition: all 0.3s;
+}
+
+.navTip:hover {
+    color: rgba(255, 208, 137, 1);
+}
+
+::selection {
+  background: rgba(255, 208, 137, 1); 
+}
+
+  
+::-moz-selection {
+  background: rgba(255, 208, 137, 1); 
+}
+
+p, a {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  width: 95%;
+  margin: 2vw auto 2vw auto;
+}
+
+a, button {
+  cursor: none;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: -1;
+  
+}
+
+.navTip {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+.logo {
+  width: 6vw;
+  height: 2.55vw;
+  background-image: url("../img/logo.svg");
+  background-size: 100%;
+  position: relative;
+  z-index: 6;
+}
+
+section {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.box {
+  width: 20vw;
+  height: 30vw;
+  position: absolute;              
+  top: 50%;                
+  transform: translate(0, -55%) ;
+  margin-left: -11vw;
+}
+
+.page1{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.bigCircle {
+  border: 0.25vw white solid;
+  width: 29vw;
+  height: 29vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 8vw;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#button1 {
+  display: none;
+}
+
+.arrows {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  width: 43%;
+  position: absolute;
+  opacity: 0.8;
+  animation: light ease-in-out 0.7s infinite;
+}
+
+@keyframes light {
+  0% {opacity: 0.6;}
+  50% {opacity: 1;}
+  100% {opacity: 0.}
+}
+
+.arrow1 {
+  position: absolute;
+  top: -0.2vw;
+  left: 16.5vw;
+}
+
+.arrow2 {
+  position: absolute;
+  top: -0.2vw;
+  left: 0vw;
+  transform: rotate(-90deg);
+}
+
+.arrow3 {
+  position: absolute;
+  top: 16.3vw;
+  left: 0vw;
+  transform: rotate(-180deg);
+}
+
+.arrow4 {
+  position: absolute;
+  top: 16.5vw;
+  left: 16.3vw;
+  transform: rotate(-270deg);
+}
+
+.smallCircle {
+  border: 0.25vw white solid;
+  width: 23vw;
+  height: 23vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 2.8vw;
+  left: 2.8vw;
+}
+
+.oval {
+  width: 4vw;
+  height: 12vw;
+  background-color: #FFC977;
+  border-radius: 6vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+.buttonDesign {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 4vw;
+}
+
+.stick {
+  width: 2.5vw;
+  height: 0.5vw;
+  background-color: #C9DFF3;
+  margin-top: 0.5vw;
+}
+
+.button1 {
+  top: -5vw;
+  left: 12.5vw;
+}
+
+.button2 {
+  top: 7.5vw;
+  left: 0.3vw;
+  transform: rotate(-90deg);
+}
+
+.button3 {
+  top: 20.5vw;
+  left: 12.3vw;
+  transform: rotate(-180deg);
+}
+
+.button4 {
+  top: 7.5vw;
+  left: 24.5vw;
+  transform: rotate(90deg);
+}
+
+.stick2 {
+  transform: rotate(90deg);
+  margin-top: 1.5vw;
+}
+
+.stick4 {
+  transform: rotate(90deg);
+  margin-top: 1.5vw;
+}
+
+.ovalAndCircles {
+  display: flex;
+}
+
+.circleLil {
+  margin-top: 9vw;
+  width: 2vw;
+}
+
+.centerCircle {
+  width: 4vw;
+  height: 4vw;
+  background-color: #FFC977;
+  position: absolute;
+  top: 9.4vw;
+  left: 9.3vw;
+  border-radius: 100%;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+}
+
+.plusStick {
+  margin-top: 1.9vw;
+  background-color: white;
+  width: 2vw;
+  height: 0.2vw;
+}
+
+.plusStick1 {
+  margin-top: 1.9vw;
+}
+
+.plusStick2 {
+  margin-top: 1.9vw;
+  transform: rotate(90deg);
+  margin-left: -2vw;
+}
+
+.mark {
+  width: 1.3vw;
+  height: 1.3vw;
+  margin: 5.5vw auto;
+}
+
+.mark1 {
+  background-color: white;
+}
+
+.star1 {
+  width: 2vw;
+  height: 2vw;
+  margin: 5vw 1vw;
+}
+
+.mark3 {
+  background-color: white;
+  border-radius: 100%;
+  margin-top: 5.5vw;
+}
+
+.star2 {
+  width: 2vw;
+  height: 2vw;
+  margin: 5.2vw 1vw;
+}
+
+
+.orangeBorder {
+  width: 4vw;
+  height: 12vw;
+  border: 0.3vw solid #FF9900;
+  border-radius: 6vw;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 16.7vw;
+  left: 25.75vw
+}
+
+.nextPage {
+  width:  3vw;
+  height: 3vw;
+  position: absolute;
+  margin: 1vw 1vw auto 94%;
+  background-image: url("../img/nazad.svg");
+  background-size: 100% 100%;
+  z-index: 1111111111111;
+}
+
+.puzzle {
+  display: flex;
+  width: 95vw;
+  height: 43vw;
+  margin: 1vw auto;
+  justify-content: center;
+  position: relative;           
+  top: 55%;                
+  transform: translate(0, -55%) 
+}
+
+.puzzleSection {
+  width: 35vw;
+}
+
+.puzzleFirst {
+  border-radius: 3vw;
+  margin-right: -2vw;
+}
+
+.puzzlseSecondImg {
+  width: 91%;
+}
+
+.puzzlik {
+  position: absolute;
+}
+
+#puzzlik1 {
+  width: 5.6vw;
+  top: 1vw;
+  left: 14vw;
+}
+
+#puzzlik2 {
+  width: 6.5vw;
+  top: 3vw;
+  left: 24vw
+}
+
+#puzzlik3 {
+  width: 4.3vw;
+  top: 3vw;
+  left: 34vw;
+}
+
+#puzzlik4 {
+  width: 7vw;
+  top: 7vw;
+  left: 39vw;
+}
+
+#puzzlik5 {
+  width: 1.5vw;
+  top: 20vw;
+  left: 43vw;
+}
+
+#puzzlik6 {
+  width: 4vw;
+  top: 30vw;
+  left: 41vw;
+}
+
+#puzzlik7 {
+  width: 2.5vw;
+  top: 36vw;
+  left: 34vw;
+}
+
+#puzzlik8 {
+  width: 6.5vw;
+  top: 38vw;
+  left: 36vw;
+}
+
+#puzzlik9 {
+  width: 11vw;
+  top: 36vw;
+  left: 21vw;
+}
+
+#puzzlik10 {
+  width: 6.5vw;
+  top: 36vw;
+  left: 12vw;
+}
+
+#puzzlik11 {
+  width: 2vw;
+  top: 32vw;
+  left: 15vw;
+}
+
+#puzzlik12 {
+  width: 0.35vw;
+  top: 16vw;
+  left: 12vw;
+}
+
+#puzzlik13 {
+  width: 2.5vw;
+  top: 9vw;
+  left: 12vw;
+}
+
+#puzzlik14 {
+  width: 25vw;
+  top: 9vw;
+  left: 15vw;
+}
+
+#puzzlik15 {
+  width: 4vw;
+  top: 19.5vw;
+  left: 25.5vw;
+}
+
+
+
+
+
+.allCircles {
+  position: relative;
+  width: 80vw;
+  height: 40vw;
+  display: flex;
+  margin: 3vw auto;
+  justify-content: center;
+  position: absolute;              
+  top: 65%;                
+  transform: translate(0, -55%) 
+}
+
+.spinningCircle {
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.page3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#circle1 {
+  width: 40vw;
+}
+
+#circle2 {
+  width: 40vw;
+}
+
+#circle3 {
+  width: 30vw;
+  margin-top: 5vw;
+}
+
+#circle4 {
+  width: 24vw;
+  margin-top: 8vw;
+}
+
+#circle5 {
+  width: 20vw;
+  margin-top: 10vw;
+}
+
+#circle6 {
+  width: 16vw;
+  margin-top: 12vw;
+}
+
+#circle7 {
+  width: 12vw;
+  margin-top: 14vw;
+}
+
+#circle8 {
+  width: 6vw;
+  margin-top: 17vw;
+}
+
+.square {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: black;
+  z-index: 8765;
+  margin-top: 19.2vw;
+}
+
+.square {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: black;
+  z-index: 8765;
+  margin-top: 19.2vw;
+}
+
+.line {
+  border-left: 0.3vw;
+  height: 2.3vw;
+  border-color: #FF9900;
+  border-style: solid;
+}
+
+.line2 {
+  position: absolute;
+  top: 2.8vw;
+  left: 37.5vw;
+  transform: rotate(-13deg);
+}
+
+.line22 {
+  position: absolute;
+  top: 2.8vw;
+  left: 42.3vw;
+  transform: rotate(13deg);
+}
+
+.line3 {
+  position: absolute;
+  top: 5.4vw;
+  left: 42.5vw;
+  height: 2.8vw;
+  transform: rotate(15deg);
+}
+
+.line33 {
+  position: absolute;
+  top: 6.7vw;
+  left: 46.2vw;
+  height: 2.8vw;
+  transform: rotate(26deg);
+}
+
+.line4 {
+  position: absolute;
+  top: 8.1vw;
+  left: 39.9vw;
+  height: 1.8vw;
+  transform: rotate(-1deg);
+}
+
+.line44 {
+  position: absolute;
+  top: 9.7vw;
+  left: 34.15vw;
+  height: 1.8vw;
+  transform: rotate(-25deg);
+}
+
+.line5 {
+  position: absolute;
+  top: 11.4vw;
+  left: 44.4vw;
+  height: 1.8vw;
+  transform: rotate(30deg);
+}
+
+.line55 {
+  position: absolute;
+  top: 10.3vw;
+  left: 41.5vw;
+  height: 1.8vw;
+  transform: rotate(10deg);
+}
+
+.animationBlock {
+  width: 30vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.allAnimations {
+  width: 75vw;
+  height: 40vw;
+  margin: 3vw auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;              
+  top: 65%;                
+  transform: translate(0, -55%) ;
+}
+
+.circleCricles {
+  width: 11.5vw;
+  top: 3.2vw;
+  position: absolute;
+  left: 1vw;
+  animation: none;
+}
+
+.circleOfMiniCricles {
+  width: 17vw;
+  position: absolute;
+  animation: none;
+}
+
+.hrombus {
+  width: 22vw;
+  margin-left: 1vw;
+}
+
+.recCrcl {
+  width: 17vw;
+  margin-top: 5vw;
+}
+
+.someCirclesBlock {
+  position: relative;
+}
+
+.someCircles {
+  position: absolute;
+  width: 7vw;
+}
+
+#someSircles1 {
+  left: 12vw;
+  top: 4vw
+}
+
+#someSircles2 {
+  left:  5vw;
+  top: 11vw
+}
+
+#someSircles3 {
+  left:  19vw;
+  top: 11vw
+}
+
+#someSircles4 {
+  left: 12vw;
+  top: 18vw
+}
+
+.movingMiniCircles {
+  width: 1.8vw;
+  height: 1.9vw;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  top: 6.2vw;
+  left: 9.2vw;
+}
+
+#movMiniCrcl1 {
+  top: 7vw;
+  left: 7.9vw;
+}
+
+#movMiniCrcl2 {
+  top: 7vw;
+  left: 20vw;
+}
+
+#movMiniCrcl3 {
+  top: 19.2vw;
+  left: 20.5vw;
+}
+
+#movMiniCrcl4 {
+  top: 19.2vw;
+  left: 7.7vw;
+}
+
+.miniMovingCircles {
+  position: relative;
+}
+
+.movingCircles {
+  background-color: white;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+  position: absolute;
+}
+
+#movCrcl1 {
+  top: 6.7vw;
+  left: 3vw;
+}
+
+#movCrcl2 {
+  top: 6.7vw;
+  left: 25vw;
+}
+
+.hromAndCircles {
+  position: relative;
+}
+
+.cross {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+#crossLine1 {
+  border-top: 0.2vw;
+  border-color: white;
+  border-style: solid;
+  width: 100vw;
+  position: absolute;
+  top: 18vw;
+}
+
+#crossLine2 {
+  border-left: 0.2vw;
+  border-color: white;
+  border-style: solid;
+  height: 100vh;
+  position: absolute;
+  top: -4vw;
+}
+
+.animButtons {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #C9DFF3;
+  position: absolute;
+}
+
+#animButton1 {
+  top: 14.5vw;
+  left: 30.2vw;
+}
+
+#animButton2 {
+  top: 14.5vw;
+  left: -2.7vw;
+}
+
+#animButton3 {
+  top: 2.5vw;
+  left: 30.2vw;
+}
+
+#animButton4 {
+  top: 2.5vw;
+  left: -2.7vw;
+}
+
+#circleCircles {
+  animation: spin 2s infinite linear;
+}
+
+#circleOfMiniCricles{
+  animation: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin1 {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+#movCrcl1 {
+  animation: none  ;
+  position: absolute;
+}
+
+#movCrcl2 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes spining {
+  0% {left: 3vw; top: 6.7vw;}
+  25% {left: 13.5vw; top: 0vw}
+  50% {left: 26vw; top: 6.7vw }
+  75% {left: 13.5vw; top: 13.4vw}
+  100% {left: 3vw; top: 6.7vw }
+}
+
+@keyframes spining1 {
+  0% {left: 25vw; top: 6.7vw;}
+  25% {left: 13.5vw; top: 13.4vw}
+  50% {left: 3vw; top: 6.7vw}
+  75% {left: 13.5vw; top: 0vw}
+  100% {left: 26vw; top: 6.7vw }
+}
+
+#movMiniCrcl1 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes movee {
+  0% {left: 7.9vw; top: 7vw;}
+  50% {left: 10.9vw; top: 9.7vw;}
+  100% {left: 7.9vw; top: 7vw;}
+}
+
+#movMiniCrcl2 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes movee1 {
+  0% {left: 20vw; top: 7vw;}
+  50% {left: 17vw; top: 9.7vw;}
+  100% {left: 20vw; top: 7vw;}
+}
+
+#movMiniCrcl3 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes movee2 {
+  0% {left: 20.5vw; top: 19.2vw;}
+  50% {left: 17vw; top: 16.7vw;}
+  100% {left: 20.5vw; top: 19.2vw;}
+}
+
+#movMiniCrcl4 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes movee3 {
+  0% {left: 7.7vw; top: 19.2vw;}
+  50% {left: 11.2vw; top: 16.7vw;}
+  100% {left: 7.7vw; top: 19.2vw;}
+}
+
+#someSircles1 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes join {
+  0% {top: 4vw}
+  50% {top: 6vw;}
+  100% {top: 4vw;}
+}
+
+#someSircles2 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes join1 {
+  0% {left: 5vw}
+  50% {left: 7vw}
+  100% {left: 5vw}
+}
+
+#someSircles3 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes join2 {
+  0% {left: 19vw}
+  50% {left: 17vw}
+  100% {left: 19vw}
+}
+
+
+#someSircles4 {
+  animation: none;
+  position: absolute;
+}
+
+@keyframes join3 {
+  0% {top: 18vw}
+  50% {top: 16vw}
+  100% {top: 18vw}
+}
+
+
+
+.allGrid {
+  width: 68vw;
+  height: 40vw;
+  display: grid;
+  gap: 0.3vw;
+  grid-template-columns: [start] 8vw [line2] 8vw [line3] 8vw [line4] 8vw [line4] 8vw [line4] 8vw [line4] 8vw [line4] 8vw  [end];
+  grid-template-rows: [row1-start] 8vw [row1-end] 8vw [row1-end] 8vw [row1-end] 8vw [row1-end] 8vw [last];
+  margin: 8vw auto 0 auto;
+  position: absolute;              
+  top: 50%;                
+  transform: translate(0, -55%) 
+}
+
+.item {
+  width: 7.7vw;
+  height: 7.7vw;
+  border-radius: 100%;
+}
+
+.blue {
+  background-color: #C9DFF3;
+}
+
+@keyframes blue1 {
+  0% {background-color: #C9DFF3;}
+  50% {background-color: #234d74;}
+  100% {background-color: #C9DFF3;}
+}
+
+.gold {
+  background-color: #FFC977;
+}
+
+@keyframes gold1 {
+  0% {  background-color: #FFC977;}
+  10% {  background-color: #865711;}
+  100% {  background-color: #FFC977;}
+}
+
+.white {
+  background-color: white;
+}
+
+@keyframes white1 {
+  0% {  background-color: white;}
+  70% {  background-color: rgb(43, 43, 43);}
+  100% {  background-color:white;}
+}
+
+
+.longBottom {
+  grid-row: span 3;
+  height: 24.3vw;
+  border-radius: 4vw;
+}
+
+.middleBottom {
+  grid-row: span 2;
+  height: 16vw;
+  border-radius: 4vw;
+}
+
+.middleLeft {
+  grid-column: span 2;
+  width: 16vw;
+  border-radius: 4vw;
+}

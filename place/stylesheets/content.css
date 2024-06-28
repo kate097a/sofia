@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    cursor: none;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/helvetica_regular.otf") format("truetype");
+    font-style: Light;
+    font-weight: Light;
+  }
+
+p, a {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .cursorDot {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transform: translate( -50%, -50%);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.cursorDot {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transform: translate( -50%, -50%);
+    pointer-events: none;
+}
+
+
+header {
+    width: 95%;
+    margin: 2vw auto;
+}
+
+a, button {
+    cursor: none;
+}
+  
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navTip {
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    color: #808080;
+    transition: all 0.3s;
+}
+
+.navTip:hover {
+    color: rgba(255, 208, 137, 1);
+}
+
+
+.logo {
+    width: 6vw;
+    height: 2.55vw;
+    background-image: url("../img/logo.svg");
+    background-size: 100%;
+    position: relative;
+    z-index: 999999;
+}
+
+main {
+    width: 90%;
+    margin: 3vw auto;
+}
+
+.placePhoto {
+    width: 85%;
+    margin-bottom: 8vw;
+    margin-left: 6.5vw;
+    position: relative;
+}
+
+.schemes {
+    width: 85%;
+    display: flex;
+    margin-left: 6vw;
+    justify-content: space-between;
+}
+
+.schemeContainer {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vw;
+}
+
+.scheme {
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.schemeText {
+    font-size: 1.1vw;
+    font-family: "Arial";
+    text-transform: uppercase;
+    color: #A0A0A0;
+}
+
+.symbols {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+    margin-left: 8vw;
+}
+
+.symbol {
+    width: 24%;
+    height: 22vw;
+    background-size: 100%;
+    transition: all 0.3s;
+}
+
+#symbol1 {
+    background-image: url("../img/symbol.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#symbol1:hover {
+    background-image: url("../img/symbol11.svg");
+}
+
+#symbol2 {
+    background-image: url("../img/symbol2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#symbol2:hover {
+    background-image: url("../img/symbol21.svg");
+}
+
+#symbol3 {
+    background-image: url("../img/symbol3.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#symbol3:hover {
+    background-image: url("../img/symbol31.svg");
+}
+
+
+h2 {
+    color: #FFD089;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-family: "Arial";
+    margin-bottom: 2.5vw;
+}
+
+.innerPhoto {
+    width: 55%;
+    margin-bottom: 5vw;
+    position: relative;
+}
+
+.circlePhotoAndText {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0vw;
+}
+
+.circlePhoto {
+    width: 38%;
+    margin-left: 58vw;
+    margin-top: -42vw;
+}
+
+.text {
+    width:  53%;
+    color: #A0A0A0;
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+}
+
+.cabinsPhoto {
+    width: 55%;
+    margin-bottom: 8vw;
+    margin-left: 40vw;
+    position: relative;
+}
+
+.textAndCabin {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15vw;
+    margin-top: -30vw;
+}
+
+.textCabin {
+    width: 60%;
+}
+
+.cabinPhoto {
+    width: 36%;
+}
+
+.tableImg {
+    width: 55%;
+    margin-bottom: 5vw;
+    position: relative;
+}
+
+.sofaAndText {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5vw;
+}
+
+.sofaImg {
+    width: 35%;
+}
+
+.headphones {
+    width: 100%;
+}
+
+.textSofa {
+    width: 50%;
+}
+
+
+input {
+    border: none;
+}
+
+footer {
+    margin-top: 15vw;
+    width: 100%;
+}
+
+.underTextFooter {
+    background-color: #FFD089;
+    margin-top: -1vw;
+    padding-bottom: 3vw;
+}
+
+.footerImg {
+    width: 100%;
+}
+
+.emailContainer {
+    width: 50%;
+    margin: 0 0 0 55vw;
+    padding-top: 4vw;
+}
+
+.emailInput {
+    padding: 1vw;
+    background-color: white;
+    border-radius: 0.4vw;
+    width: 28vw;
+    height: 4vw;
+    margin-bottom: 2vw;
+}
+
+.emailInput::placeholder{
+    opacity: 0.3;
+    color: black;
+    font-size: 1vw;
+    font-family: Arial;
+}
+
+.emailBtn {
+    background-color: #C0C0C0;
+    padding: 1vw 3vw;
+    border-radius: 1.5vw;
+    color: white;
+
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+.emailBtn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgba(255, 208, 137, 1);
+}
+
+.emailContainer{
+    width: 40%;
+}
+
+.contactsAndPages {
+    display: flex;
+    width: 90%;
+    margin: 5vw auto 0 auto;
+    align-items: end;
+}
+
+.year {
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.pages {
+    margin-left: 35vw;
+}
+
+.pagesTip {
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 1.5vw;
+    text-align: left;
+} 
+
+.pagesAndMedia {
+    display: flex;
+}
+
+.socialmedia {
+    margin-left: 5vw;
+    width: 9vw;
+}
+
+.socialmediaText {
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: 1.5vw;
+    text-align: left;
+
+    margin-bottom: 0.5vw;
+}
+
+.socialmediaIcons {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+#vk {
+    width: 2.2vw;
+    height: 2.2vw;
+    background-image: url("../img/vk.svg");
+    background-size: 100%;
+}
+
+#tg {
+    width: 2.2vw;
+    height: 2.2vw;
+    background-image: url("../img/tg.svg");
+    background-size: 100%;
+}
+
+#insta {
+    width: 2.2vw;
+    height: 2.2vw;
+    background-image: url("../img/insta.svg");
+    background-size: 100%;
+}
+
+
+
+img {
+    z-index: 999900000;
+}
+
+::selection {
+    background: rgba(255, 208, 137, 1); 
+}
+
+    
+::-moz-selection {
+    background: rgba(255, 208, 137, 1); 
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <!-- ltr - Текст отображается как обычно — слева направо -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{ссылка}">
+    <meta property="og:title" content="название">
+    <meta property="og:description" content="текст">
+    <meta property="og:image" content="{картинка}">
+    <title>Шаблон</title>
+      <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
+      <script src="javascripts/java-script.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="cursorDot" id="cursorDot"></div>
+    <header>
+      <nav class="navigation">
+        <a class="navTip" href="../index.html">о проекте</a>
+        <a class="navTip" href="../place/index.html">пространство</a>
+        <a class="navTip" href="../events/index.html">события</a>
+        <form action="../index.html">
+          <button class="logo"></button>
+         </form>
+        <a class="navTip" href="../shop/index.html">магазин</a>
+        <a class="navTip" href="../Web-poster2-main/index.html">сгенерировать</a>
+        <a class="navTip" href="../Web-poster-main/index.html">увидеть звук</a>
+      </nav>
+    </header>
+
+      
+    <main>
+
+      <section class="zeroScreen">
+        <p class="headLine">В ЦЕНТРЕ ЗВУКОВОЙ КУЛЬТУРЫ<br>
+          ЕСТЬ НЕ ТОЛЬКО ЗВУК </p>
+        <img class="zeroBlockImg" src="./img/zeroScreen.png">
+        <img class="cartAll" src="./img/cart.svg">
+      </section>
+
+      <section class="allShop">
+
+        <div class="block">
+          <div class="halfOfBlock">
+
+            <section class="card">
+              
+              <img class="cardImg" src="./img/cassette.png">
+
+              <div class="cardText">
+                <div class="namAndPrice">
+                  <p class="name">аудиокассета</p>
+                  <p class="price">900₽</p>
+                </div>
+                <div class="cart" id="cart1">
+              </div>
+            </section>
+
+            <section class="card">
+              
+              <img class="cardImg" src="./img/convert.png">
+              
+              <div class="cardText">
+                <div class="namAndPrice">
+                  <p class="name">СЕРТИФИКАТ</p>
+                  <p class="price">2500₽</p>
+                </div>
+                <div class="cart" id="cart2">
+              </div>
+            </section>
+
+          </div>
+
+          <section class="card biggerCard">
+              
+            <img class="cardImg" src="./img/shopper.png">
+            
+            <div class="cardText">
+              <div class="namAndPrice">
+                <p class="name">ШОППЕР</p>
+                <p class="price">2000₽</p>
+              </div>
+              <div class="cart" id="cart3">
+            </div>
+          </section>
+
+        </div>
+
+        <div class="block">
+
+          <section class="card biggerCard">
+              
+            <img class="cardImg" src="./img/disk.png">
+            
+            <div class="cardText">
+              <div class="namAndPrice">
+                <p class="name">ВИНИЛОВАЯ ПЛАСТИНКА </p>
+                <p class="price">990₽</p>
+              </div>
+              <div class="cart" id="cart4">
+            </div>
+          </section>
+
+          <section class="card biggerCard">
+              
+            <img class="cardImg" src="./img/tshirt.png">
+            
+            <div class="cardText">
+              <div class="namAndPrice">
+                <p class="name">ФУТБОЛКА </p>
+                <p class="price">1500₽</p>
+              </div>
+              <div class="cart" id="cart5">
+            </div>
+          </section>
+
+        </div>
+
+
+
+         <div class="block">
+          <div class="halfOfBlock">
+
+            <section class="card">
+              
+              <img class="cardImg" src="./img/cards.png">
+
+              <div class="cardText">
+                <div class="namAndPrice">
+                  <p class="name">ФИРМЕННЫЙ БЕЙДЖ</p>
+                  <p class="price">990₽</p>
+                </div>
+                <div class="cart" id="cart6">
+            
+              </div>
+            </section>
+
+            <section class="card">
+              
+              <img class="cardImg" src="./img/flag.png">
+              
+              <div class="cardText">
+                <div class="namAndPrice">
+                  <p class="name">ФИРМЕННЫЙ ФЛАГ</p>
+                  <p class="price">2300₽</p>
+                </div>
+                <div class="cart" id="cart7">
+              </div>
+            </section>
+
+          </div>
+
+          <section class="card biggerCard">
+              
+            <img class="cardImg" src="./img/converts.png">
+            
+            <div class="cardText">
+              <div class="namAndPrice">
+                <p class="name">ФИРМЕННЫЙ КОНВЕРТ</p>
+                <p class="price">990₽</p>
+              </div>
+              <div class="cart" id="cart8">
+            </div>
+          </section>
+
+        </div>
+        
+      </section>
+
+      <section class="book">
+        <img class="underBook" src="./img/underBook.svg">
+        <div class="bookImg" id="bookImg">
+      </section>
+      <p class="aboutBook">Читай книгу SCC</p>
+
+
+      <section class="cartBlock">
+        <div class="cartBack"></div>
+        <div class="cartContainer">
+          <p class="cartTitle">КОРЗИНА / 0шт.</p>
+          <p class="shipping">Бесплатная доставка</p>
+        
+          <div class="itemsCards"></div>
+          <p class="sumTitle">СУММА ЗАКАЗА</p>
+          <div class="priceBlock">
+            <div class="priceLine priceAll">
+              <p class="priceText">Стоимость продуктов</p>
+              <p class="priceText  pr">0₽</p>
+            </div>
+
+            <div class="priceLine discount">
+              <p class="priceText">Скидка</p>
+              <p class="priceText">0₽</p>
+            </div>
+
+            <div class="priceLine total">
+              <p class="priceText">Итого</p>
+              <p class="priceText pr1">0₽</p>
+            </div>
+          </div>
+          <div class="btnContainer">
+              <button class="complitOrder">Оформить заказ</button>
+          </div>
+        </div>
+        <div class="orderComplit">
+          <p class="orderText">Отлично!<br>
+            Заказ скоро будет у вас</p>
+          <form action="./index.html">
+            <button class="orderComplitButton">Продолжить покупки</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+
+    <footer>
+      <img class="footerImg" src="./img/footer.svg">
+      <div class="underTextFooter">
+        <div class="emailContainer">
+            <input class="emailInput" type="email" placeholder="Введите почту">
+            <button class="emailBtn">Подписаться</button>
+        </div>
+
+        <div class="contactsAndPages">
+
+          <p class="year">@2024_SCC</p>
+
+          <div class="pagesAndMedia">
+            <ul class="pages">
+              <li class="pagesTip">Помощь</li>
+              <li class="pagesTip">Магазин</li>
+              <li class="pagesTip">События</li>
+              <li class="pagesTip">Пространство</li>
+            </ul>
+
+            <div class="socialmedia">
+              <p class="socialmediaText">Социальные сети</p>
+
+              <div class="socialmediaIcons">
+                <div class="socialmediaIcon" id="vk"></div>
+                <div class="socialmediaIcon" id="tg"></div>
+                <div class="socialmediaIcon" id="insta"></div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

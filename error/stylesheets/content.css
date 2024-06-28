@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+@font-face {
+  font-family: "CarlaSansLight";
+  src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+  font-style: Light;
+  font-weight: Light;
+}
+
+p{
+    font-family: 'CarlaSansLight';
+}
+
+
+::selection {
+    background: rgba(255, 208, 137, 1); 
+}
+
+    
+::-moz-selection {
+    background: rgba(255, 208, 137, 1); 
+}

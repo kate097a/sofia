@@ -1,0 +1,1001 @@
+/* Desktop */
+@media screen and (max-width: 950px) {
+
+.box {
+  width: 55vw;
+  height: 60vw;
+  position: absolute;              
+  top: 50%;                
+  transform: translate(0, -58%) 
+}
+
+.page1{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.bigCircle {
+  border: 0.25vw white solid;
+  width: 54vw;
+  height: 54vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 8vw;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#button1 {
+  display: none;
+}
+
+.arrows {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  width: 46%;
+  position: absolute;
+}
+
+.arrow1 {
+  position: absolute;
+  top: -1.7vw;
+  left: 30vw;
+  transform: scale(-1, 1) rotate(-90deg);
+}
+
+.arrow2 {
+  position: absolute;
+  top: -1.7vw;
+  left: -1vw;
+  transform: rotate(-90.0deg);
+}
+
+.arrow3 {
+  position: absolute;
+  top: 30vw;
+  left: -0.9vw;
+  transform: scale(-1, 1) rotate(90deg);
+}
+
+.arrow4 {
+  position: absolute;
+  top: 30vw;
+  left: 30vw;
+  transform: rotate(-270deg);
+}
+
+.smallCircle {
+  border: 0.25vw white solid;
+  width: 44vw;
+  height: 44vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 4.8vw;
+  left: 4.8vw;
+}
+
+.oval {
+  width: 7.5vw;
+  height: 22vw;
+  background-color: #FFC977;
+  border-radius: 6vw;
+  margin-left: 0.8vw;
+  margin-right: 0.8vw;
+}
+
+.buttonDesign {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 4vw;
+}
+
+.stick {
+  width: 4vw;
+  height: 1vw;
+  background-color: #C9DFF3;
+  margin-top: 0.7vw;
+}
+
+.button1 {
+  top: -9vw;
+  left: 24.8vw;
+}
+
+.button2 {
+  top: 14.2vw;
+  left: 1.5vw;
+  transform: rotate(-90deg);
+}
+
+.button3 {
+  top: 38.9vw;
+  left: 24.7vw;
+  transform: rotate(-180deg);
+}
+
+.button4 {
+  top: 14.4vw;
+  left: 47.8vw;
+  transform: rotate(90deg);
+}
+
+.stick2 {
+  transform: rotate(90deg);
+  margin-top: 2vw;
+}
+
+.stick4 {
+  transform: rotate(90deg);
+  margin-top: 2vw;
+}
+
+.ovalAndCircles {
+  display: flex;
+}
+
+.circleLil {
+  margin-top: 13vw;
+  width: 3.3vw;
+
+}
+
+.centerCircle {
+  width: 8vw;
+  height: 8vw;
+  background-color: #FFC977;
+  position: absolute;
+  top: 17.5vw;
+  left: 17.5vw;
+  border-radius: 100%;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+}
+
+.plusStick {
+  margin-top: 1.9vw;
+  background-color: white;
+  width: 4vw;
+  height: 0.5vw;
+}
+
+.plusStick1 {
+  margin-top: 3.6vw;
+}
+
+.plusStick2 {
+  margin-top: 3.5vw;
+  transform: rotate(90deg);
+  margin-left: -4vw;
+}
+
+.mark {
+  width: 3vw;
+  height: 3vw;
+  margin: 8.5vw auto;
+}
+
+.mark1 {
+  background-color: white;
+}
+
+.star1 {
+  width: 4vw;
+  height: 4vw;
+  margin: 8.3vw 1.7vw;
+}
+
+.mark3 {
+  background-color: white;
+  border-radius: 100%;
+  margin-top: 8.7vw;
+  width: 3.8vw;
+  height: 3.8vw;
+}
+
+.star2 {
+  width: 4vw;
+  height: 4vw;
+  margin: 8.4vw 1.6vw;
+}
+
+
+.orangeBorder {
+  width: 7.5vw;
+  height: 22vw;
+  border: 0.5vw solid #FF9900;
+  border-radius: 6vw;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 24.1vw;
+  left: 48vw
+}
+
+
+
+
+
+
+
+.allCircles {
+  position: relative;
+  width: 80vw;
+  height: 40vw;
+  display: flex;
+  margin: 3vw auto;
+  justify-content: center;
+  position: absolute;              
+  top: 50%;                
+  transform: translate(0, -80%) 
+}
+
+.spinningCircle {
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.page3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#circle1 {
+  width: 60vw;
+}
+
+#circle2 {
+  width: 60vw;
+}
+
+#circle3 {
+  width: 44vw;
+  margin-top: 8vw;
+}
+
+#circle4 {
+  width: 34vw;
+  margin-top: 12.5vw;
+}
+
+#circle5 {
+  width: 29vw;
+  margin-top: 15vw;
+}
+
+#circle6 {
+  width: 22vw;
+  margin-top: 18.2vw;
+}
+
+#circle7 {
+  width: 16vw;
+  margin-top: 21vw;
+}
+
+#circle8 {
+  width: 8vw;
+  margin-top: 24.7vw;
+}
+
+.square {
+  width: 3vw;
+  height: 3vw;
+  background-color: black;
+  z-index: 8765;
+  margin-top: 19.2vw;
+}
+
+.square {
+  width: 2vw;
+  height: 2vw;
+  background-color: black;
+  z-index: 8765;
+  margin-top: 27.7vw;
+}
+
+.line {
+  border-left: 0.4vw;
+  height: 4vw;
+  border-color: #FF9900;
+  border-style: solid;
+}
+
+.line2 {
+  position: absolute;
+  top: 4.1vw;
+  left: 37vw;
+  transform: rotate(-6deg);
+}
+
+.line22 {
+  position: absolute;
+  top: 4.1vw;
+  left: 42.7vw;
+  transform: rotate(6deg);
+}
+
+.line3 {
+  position: absolute;
+  top: 8.6vw;
+  left: 43.5vw;
+  height: 4vw;
+  transform: rotate(13deg);
+}
+
+.line33 {
+  position: absolute;
+  top: 10.6vw;
+  left: 49.2vw;
+  height: 4w;
+  transform: rotate(28deg);
+}
+
+.line4 {
+  position: absolute;
+  top: 14.9vw;
+  left: 31.8vw;
+  height: 2.1vw;
+  transform: rotate(-32deg);
+}
+
+.line44 {
+  position: absolute;
+  top: 12.8vw;
+  left: 39.8vw;
+  height: 2.1vw;
+  transform: rotate(4deg);
+}
+
+.line5 {
+  position: absolute;
+  top: 15.6vw;
+  left: 42.7vw;
+  height: 3vw;
+  transform: rotate(15deg);
+}
+
+.line55 {
+  position: absolute;
+  top: 16.7vw;
+  left: 45.6vw;
+  height: 3vw;
+  transform: rotate(27deg);
+}
+
+
+
+
+
+.puzzle {
+  display: flex;
+  width: 95vw;
+  height: 43vw;
+  margin: 1vw auto;
+  justify-content: center;
+  position: relative;
+  transform: rotate(-90deg);
+  margin-top: -25vw;
+}
+
+.puzzleSection {
+  width: 35vw;
+}
+
+.puzzleFirst {
+  border-radius: 3vw;
+  margin-right: -2vw;
+}
+
+.puzzlseSecondImg {
+  width: 91%;
+}
+
+.puzzlik {
+  position: absolute;
+}
+
+#puzzlik1 {
+  width: 5.6vw;
+  top: 1vw;
+  left: 14vw;
+}
+
+#puzzlik2 {
+  width: 6.5vw;
+  top: 3vw;
+  left: 24vw
+}
+
+#puzzlik3 {
+  width: 4.3vw;
+  top: 3vw;
+  left: 34vw;
+}
+
+#puzzlik4 {
+  width: 7vw;
+  top: 7vw;
+  left: 39vw;
+}
+
+#puzzlik5 {
+  width: 1.5vw;
+  top: 20vw;
+  left: 43vw;
+}
+
+#puzzlik6 {
+  width: 4vw;
+  top: 30vw;
+  left: 41vw;
+}
+
+#puzzlik7 {
+  width: 2.5vw;
+  top: 36vw;
+  left: 34vw;
+}
+
+#puzzlik8 {
+  width: 6.5vw;
+  top: 38vw;
+  left: 36vw;
+}
+
+#puzzlik9 {
+  width: 11vw;
+  top: 36vw;
+  left: 21vw;
+}
+
+#puzzlik10 {
+  width: 6.5vw;
+  top: 36vw;
+  left: 12vw;
+}
+
+#puzzlik11 {
+  width: 2vw;
+  top: 32vw;
+  left: 15vw;
+}
+
+#puzzlik12 {
+  width: 0.35vw;
+  top: 16vw;
+  left: 12vw;
+}
+
+#puzzlik13 {
+  width: 2.5vw;
+  top: 9vw;
+  left: 12vw;
+}
+
+#puzzlik14 {
+  width: 25vw;
+  top: 9vw;
+  left: 15vw;
+}
+
+#puzzlik15 {
+  width: 4vw;
+  top: 19.5vw;
+  left: 25.5vw;
+}
+
+
+}
+
+
+@media (max-width: 700px) {
+  .puzzle {
+    display: flex;
+    width: 95vw;
+    height: 65vw;
+    margin: 1vw auto;
+    justify-content: center;
+    position: relative;
+    transform: rotate(-90deg);
+    margin-top: -35vw;
+  }
+  
+  .puzzleSection {
+    width: 70vw;
+  }
+  
+  .puzzleFirst {
+    border-radius: 3vw;
+  }
+  
+  .puzzlseSecondImg {
+    width: 100%;
+  }
+  
+  .puzzlik {
+    position: absolute;
+  }
+  
+  #puzzlik1 {
+    width: 8.5vw;
+    top: 1vw;
+    left: 14vw;
+  }
+  
+  #puzzlik2 {
+    width: 10.2vw;
+    top: 3vw;
+    left: 24vw
+  }
+  
+  #puzzlik3 {
+    width: 4.3vw;
+    top: 3vw;
+    left: 34vw;
+  }
+  
+  #puzzlik4 {
+    width: 7vw;
+    top: 7vw;
+    left: 39vw;
+  }
+  
+  #puzzlik5 {
+    width: 1.5vw;
+    top: 20vw;
+    left: 43vw;
+  }
+  
+  #puzzlik6 {
+    width: 4vw;
+    top: 30vw;
+    left: 41vw;
+  }
+  
+  #puzzlik7 {
+    width: 2.5vw;
+    top: 36vw;
+    left: 34vw;
+  }
+  
+  #puzzlik8 {
+    width: 10.3vw;
+    top: 38vw;
+    left: 36vw;
+  }
+  
+  #puzzlik9 {
+    width: 11vw;
+    top: 36vw;
+    left: 21vw;
+  }
+  
+  #puzzlik10 {
+    width: 6.5vw;
+    top: 36vw;
+    left: 12vw;
+  }
+  
+  #puzzlik11 {
+    width: 2vw;
+    top: 32vw;
+    left: 15vw;
+  }
+  
+  #puzzlik12 {
+    width: 0.35vw;
+    top: 16vw;
+    left: 12vw;
+  }
+  
+  #puzzlik13 {
+    width: 2.5vw;
+    top: 9vw;
+    left: 12vw;
+  }
+  
+  #puzzlik14 {
+    width: 25vw;
+    top: 9vw;
+    left: 15vw;
+  }
+  
+  #puzzlik15 {
+    width: 4vw;
+    top: 19.5vw;
+    left: 25.5vw;
+  }
+  
+
+
+
+
+
+  .animationBlock {
+    width: 40vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .allAnimations {
+    width: 85vw;
+    height: 40vw;
+    margin: 3vw auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transform: rotate(90deg);
+    margin-top: -15vw;
+  }
+  
+  .circleCricles {
+    width: 11.5vw;
+    top: 3.2vw;
+    position: absolute;
+    left: 1vw;
+    animation: none;
+  }
+  
+  .circleOfMiniCricles {
+    width: 17vw;
+    position: absolute;
+    animation: none;
+  }
+  
+  .hrombus {
+    width: 22vw;
+    margin-left: 1vw;
+  }
+  
+  .recCrcl {
+    width: 17vw;
+    margin-top: 5vw;
+  }
+  
+  .someCirclesBlock {
+    position: relative;
+  }
+  
+  .someCircles {
+    position: absolute;
+    width: 7vw;
+  }
+  
+  #someSircles1 {
+    left: 12vw;
+    top: 4vw
+  }
+  
+  #someSircles2 {
+    left:  5vw;
+    top: 11vw
+  }
+  
+  #someSircles3 {
+    left:  19vw;
+    top: 11vw
+  }
+  
+  #someSircles4 {
+    left: 12vw;
+    top: 18vw
+  }
+  
+  .movingMiniCircles {
+    width: 1.8vw;
+    height: 1.9vw;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 6.2vw;
+    left: 9.2vw;
+  }
+  
+  #movMiniCrcl1 {
+    top: 7vw;
+    left: 7.9vw;
+  }
+  
+  #movMiniCrcl2 {
+    top: 7vw;
+    left: 20vw;
+  }
+  
+  #movMiniCrcl3 {
+    top: 19.2vw;
+    left: 20.5vw;
+  }
+  
+  #movMiniCrcl4 {
+    top: 19.2vw;
+    left: 7.7vw;
+  }
+  
+  .miniMovingCircles {
+    position: relative;
+  }
+  
+  .movingCircles {
+    background-color: white;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    position: absolute;
+  }
+  
+  #movCrcl1 {
+    top: 6.7vw;
+    left: 3vw;
+  }
+  
+  #movCrcl2 {
+    top: 6.7vw;
+    left: 25vw;
+  }
+  
+  .hromAndCircles {
+    position: relative;
+  }
+  
+  .cross {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+  }
+  
+  #crossLine1 {
+    border-top: 0.2vw;
+    border-color: white;
+    border-style: solid;
+    width: 100vw;
+    position: absolute;
+    top: 18vw;
+  }
+  
+  #crossLine2 {
+    border-left: 0.2vw;
+    border-color: white;
+    border-style: solid;
+    height: 100vh;
+    position: absolute;
+    top: -4vw;
+  }
+  
+  .animButtons {
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color: #C9DFF3;
+    position: absolute;
+  }
+  
+  #animButton1 {
+    top: 14.5vw;
+    left: 30.2vw;
+  }
+  
+  #animButton2 {
+    top: 14.5vw;
+    left: -2.7vw;
+  }
+  
+  #animButton3 {
+    top: 2.5vw;
+    left: 30.2vw;
+  }
+  
+  #animButton4 {
+    top: 2.5vw;
+    left: -2.7vw;
+  }
+  
+  #circleCircles {
+    animation: spin 2s infinite linear;
+  }
+  
+  #circleOfMiniCricles{
+    animation: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes spin1 {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  
+  #movCrcl1 {
+    animation: none  ;
+    position: absolute;
+  }
+  
+  #movCrcl2 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes spining {
+    0% {left: 3vw; top: 6.7vw;}
+    25% {left: 13.5vw; top: 0vw}
+    50% {left: 26vw; top: 6.7vw }
+    75% {left: 13.5vw; top: 13.4vw}
+    100% {left: 3vw; top: 6.7vw }
+  }
+  
+  @keyframes spining1 {
+    0% {left: 25vw; top: 6.7vw;}
+    25% {left: 13.5vw; top: 13.4vw}
+    50% {left: 3vw; top: 6.7vw}
+    75% {left: 13.5vw; top: 0vw}
+    100% {left: 26vw; top: 6.7vw }
+  }
+  
+  #movMiniCrcl1 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes movee {
+    0% {left: 7.9vw; top: 7vw;}
+    50% {left: 10.9vw; top: 9.7vw;}
+    100% {left: 7.9vw; top: 7vw;}
+  }
+  
+  #movMiniCrcl2 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes movee1 {
+    0% {left: 20vw; top: 7vw;}
+    50% {left: 17vw; top: 9.7vw;}
+    100% {left: 20vw; top: 7vw;}
+  }
+  
+  #movMiniCrcl3 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes movee2 {
+    0% {left: 20.5vw; top: 19.2vw;}
+    50% {left: 17vw; top: 16.7vw;}
+    100% {left: 20.5vw; top: 19.2vw;}
+  }
+  
+  #movMiniCrcl4 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes movee3 {
+    0% {left: 7.7vw; top: 19.2vw;}
+    50% {left: 11.2vw; top: 16.7vw;}
+    100% {left: 7.7vw; top: 19.2vw;}
+  }
+  
+  #someSircles1 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes join {
+    0% {top: 4vw}
+    50% {top: 6vw;}
+    100% {top: 4vw;}
+  }
+  
+  #someSircles2 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes join1 {
+    0% {left: 5vw}
+    50% {left: 7vw}
+    100% {left: 5vw}
+  }
+  
+  #someSircles3 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes join2 {
+    0% {left: 19vw}
+    50% {left: 17vw}
+    100% {left: 19vw}
+  }
+  
+  
+  #someSircles4 {
+    animation: none;
+    position: absolute;
+  }
+  
+  @keyframes join3 {
+    0% {top: 18vw}
+    50% {top: 16vw}
+    100% {top: 18vw}
+  }
+  
+ 
+}
+
+
+
+
+
+
+
+@media(max-width: 800px) {
+  .allGrid {
+    position: absolute;              
+    top: 50%;                
+    transform: translate(0, -65%) rotate(-90deg); 
+  }
+}
+
+@media(max-width: 650px) {
+  
+.allGrid {
+  width: 104vw;
+  height: 68vw;
+  display: grid;
+  gap: 0.7vw;
+  grid-template-columns: [start] 13vw [line2] 13vw [line3] 13vw [line4] 13vw [line4] 13vw [line4] 13vw [line4] 13vw [line4] 13vw [end];
+  grid-template-rows: [row1-start] 13vw [row1-end] 13vw [row1-end] 13vw [row1-end] 13vw [row1-end] 13vw [last];
+  margin: 2vw auto 0 auto;
+  transform: translate(0, -50%) rotate(-90deg); 
+}
+
+.item {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 100%;
+}
+
+.longBottom {
+  grid-row: span 3;
+  height: 40.4vw;
+  border-radius: 7cqh;
+}
+
+.middleBottom {
+  grid-row: span 2;
+  height: 26.5vw;
+  border-radius: 7vw;
+}
+
+.middleLeft {
+  grid-column: span 2;
+  width: 26.5vw;
+  border-radius: 7vw;
+}
+
+}
